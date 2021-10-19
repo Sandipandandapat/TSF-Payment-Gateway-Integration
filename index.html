@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/dollar.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <title>Donate</title>
+  </head>
+  <style>
+    header {
+      width: 100%;
+      height: 100px;
+      margin-top: 20px;
+    }
+
+    .cov {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f1f1;
+    }
+    .cov {
+      /* background-image: url(images/donation2.jpg); */
+      background-size: cover;
+      color: rgb(204, 22, 22);
+    }
+    #upper-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 120px;
+      box-shadow: 0 8px 32px 0 rgb(5 8 46 / 37%);
+    }
+    #upper-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 120px;
+      box-shadow: 0 8px 32px 0 rgb(5 8 46 / 37%);
+    }
+    h1 {
+      position: absolute;
+      top: 0;
+      margin-top: 130px;
+      font-family: sans-serif;
+    }
+    h2 {
+      position: absolute;
+      top: 0;
+      margin-top: 180px;
+      font-family: sans-serif;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      padding: 3px;
+      font-size: x-large;
+      color: #017598;
+    }
+    .wrapper {
+      box-shadow: 0 8px 32px 0 rgba(5, 8, 46, 0.37);
+      /* background-color: skyblue; */
+      border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      position: absolute;
+      left: 40%;
+      padding: 70px 0;
+    }
+
+    .btn3 {
+      padding: 15px 100px;
+      margin: 80px 10px;
+      background-color: rgb(231, 240, 240);
+      color: rgb(14, 97, 145);
+      /* border: 2px solid rgb(172, 9, 31); */
+      border-radius: 8px;
+      font-family: "Poppins", sans-serif;
+      font-size: larger;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 8px 32px 0 rgb(5 8 46 / 37%);
+      font-weight: bold;
+    }
+
+    .btn3::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #000;
+      -webkit-transform: scaleX(0.3);
+      transform: scaleX(0.3);
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    .btn3:hover {
+      opacity: 1;
+      background-color: #abf7f3;
+      border-radius: 5px;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      transition: -webkit-transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02),
+        opacity 0.4s;
+      transition: transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+    }
+    .btn2:hover {
+      background-color: #abf7f3;
+      border-radius: 8px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <a class="btn2" href="index.html"
+        ><span class="fas fa-home"></span>Home</a
+      >
+      <a class="btn2" href="aboutUs.html"
+        ><span class="fas fa-info"></span>AboutUs</a
+      >
+      <a class="btn2" href="contactUs.html"
+        ><span class="fas fa-address-card"></span>ContactUs</a
+      >
+    </header>
+    <div class="cov">
+      <h1>The Sparks Foundation</h1>
+      <h2>A non-profit organisation for child education</h2>
+      <img
+        id="upper-left"
+        src="images/banner2-mob.jpg"
+        width="350"
+        height="250"
+      />
+      <img id="upper-right" src="images/banner1.jpg" width="350" height="250" />
+      <img id="center" src="images/donation2.jpg" style="border-radius: 8px" />
+
+      <div class="wrapper">
+        <a href="https://rzp.io/l/Oy3AewrXxI" class="btn3">
+          <span class="fas fa-hand-holding-usd fa-lg"></span>Donate
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
